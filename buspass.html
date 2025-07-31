@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC BUS PASS</title>
+</head>
+<body>
+    <center>
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Telangana_State_Road_Transport_Corporation_logo.png" alt="TSRTC Logo" width="50">
+        <h3>TELANGANA STATE ROAD TRANSPORT CORPORATION</h3>
+        <h3>GENERAL BUS PASS APPLICATION</h3>
+    </center>
+
+    <form>
+        <fieldset>
+            <legend><strong>APPLICATION DETAILS</strong></legend>
+            <table width="100%" cellspacing="10" cellpadding="3">
+                <tr>
+                    <td>
+                        <label for="name">Name <span style="color: red">*</span>:</label><br>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                    </td>
+                    <td>
+                        <label for="guardianName">Father's/Guardian's Name <span style="color: red">*</span>:</label><br>
+                        <input type="text" id="guardianName" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth <span style="color: red">*</span>:</label><br>
+                        <input type="date" id="dob" required>
+                    </td>
+                    <td>
+                        <label>Gender <span style="color: red">*</span>:</label><br>
+                        <input type="radio" name="gender" id="male" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Age is on:</label><br>
+                        <input type="text" placeholder="Your age" disabled> Year(s)
+                    </td>
+                    <td>
+                        <label for="aadhar">Aadhar Number:</label><br>
+                        <input type="text" id="aadhar">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="whatsapp">Whatsapp No <span style="color: red">*</span>:</label><br>
+                        <input type="text" id="whatsapp" placeholder="10-digit mobile number" required>
+                    </td>
+                    <td>
+                        <label for="email">Email ID <span style="color: red">*</span>:</label><br>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="photo">Photo <span style="color: red">*</span>:</label><br>
+                        <input type="file" id="photo" accept=".jpg,.jpeg" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>RESIDENTIAL ADDRESS</strong></legend>
+            <table width="100%" cellspacing="10" cellpadding="3">
+                <tr>
+                    <td>
+                        <label for="address">Applicant Address:</label><br>
+                        <textarea id="address" rows="4" cols="50" placeholder="Enter your full address here..."></textarea>
+                    </td>
+                    <td>
+                        <label for="district">District <span style="color: red">*</span>:</label><br>
+                        <select id="district" required>
+                            <option value="" disabled selected>----- Select District -----</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Rangareddy">Rangareddy</option>
+                            <option value="Medchal">Medchal</option>
+                            <option value="Warangal">Warangal</option>
+                            <option value="Nizamabad">Nizamabad</option>
+                        
+                        </select>
+                    </td></tr>
+                    <tr>
+                    <td>
+                        <label for="mandal">Mandal</label><br>
+                        <select name="mandal" id="mandal" required>
+                        <option value="" disabled selected >-----select Mandal-----</option>
+                        <option value="Malkajgiri">Malkajgiri</option>
+                        <option value="Mahabubnagar">Mahabubnagar</option>
+                        <option value="rangaReddy">rangareddy</option>
+                        <option value="secundarabad">Secundarabad</option>
+                        <option value="Kukatpally">Kukatpally</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Village">Village</label>
+                        <select name="Village" id="village">
+                        <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pincode">PinCode:<subscript style="color:red"</subscriptstyle>*</subscript></label>
+                        <input type="text" required> 
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend><strong>PASS TYPE DETAILS</strong></legend>
+            <table width="100%" cellpadding="3" cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="City">City :</label>
+                        <select name="City" id="City">
+                            <option value="hyderabad">Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pass type">Pass Type :</label>
+                        <select name="Pass type" id="pass type">
+                            <option value="" disabled selected>----Bus Pass type----</option>
+                            <option value="General">General Bus Pass</option>
+                            <option value="Metro">Metro Bus pass</option>
+                            <option value="deluxe">deluxe Bus pass</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><strong>MODE OF PAYMENT & PASS COLLECTION</strong></legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="payment mode">Payment Mode:<subscript style="color:red">*</subscript></label>
+                        <select name="Payment mode" id="payment mode">
+                        <option value="payment mode" disabled selected>---Payment mode---</option>
+                        <option value="Online">online</option>
+                        <option value="cash">cash</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pass delivary mode">Pass Delivary Mode <subscript style="color:red">*</subscript> </label>
+                        <select name="pass delivary mode" id="pass delivary mode">
+                            <option value="disabled" disabled selected>--Pass Delivary Mode--</option>
+                            <option value="At counter">At counter</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="center" required >At Which Centre You want collect your Pass:<subscript style="color:red">*</subscript></label>
+                        <select name="center" id="center">
+                            <option value="Select centre" disabled selected>--Select your centre--</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <center>
+        <img src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2014/09/avoid-captcha.jpg" alt="captcha" width="80">
+        <br>
+        <label for="text">Enter the CAPTCHA</label>
+        <input type="text">
+        <br>
+        <br>
+        <br>
+            <input type="submit" value="Submit Application">
+        </center>
+    </form>
+</body>
+</html>
